@@ -1,3 +1,14 @@
+fn main() {
+    for n in range(1i, 100) {
+        println!("{:s}",
+                 if div_by_fifteen(n)    { "FizzBuzz".to_string() }
+                 else if div_by_five(n)  { "Buzz".to_string() }
+                 else if div_by_three(n) { "Fizz".to_string() }
+                 else                    { n.to_string() }
+                );
+    }
+}
+
 fn is_not_zero(num: int) -> bool {
   num != 0
 }
