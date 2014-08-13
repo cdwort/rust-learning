@@ -2,6 +2,14 @@ fn is_not_zero(num: int) -> bool {
   num != 0
 }
 
+fn div_by_fifteen(num: int) -> bool {
+  if is_not_zero(num) {
+    num % 15 == 0
+  } else {
+    false
+  }
+}
+
 fn div_by_five(num: int) -> bool {
   if is_not_zero(num) {
     num % 5 == 0
